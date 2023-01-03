@@ -1,5 +1,7 @@
 package com.eurokonverter;
 
+import static android.widget.Toast.*;
+
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Selection;
@@ -7,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -130,6 +133,8 @@ public class MainActivity extends AppCompatActivity {
         textView.setText(string);
     }
 
+
+    
     /**
      *
      */
@@ -196,9 +201,11 @@ public class MainActivity extends AppCompatActivity {
                 inputView.append("" + key);
             }
         } else {
-
             String text = inputView.getText().toString();
             if (text.contains(",") && text.indexOf(',') == text.length() - 5) {
+                Toast.makeText(getApplicationContext(),
+                        "First remove the symbol",
+                        Toast.LENGTH_SHORT).show();
                 return;
             }
 
