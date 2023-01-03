@@ -11,3 +11,11 @@ This project is fork of Euro konverter.
 # Screenshots
 
 ![screenshot](.github/Screenshot-270.jpg)
+
+# Ussage
+
+By default, the currency rate is set to 1 to 2. 
+To change the rate, enter the value of one unit of currency in another and press the SET button. 
+After that the rate value will be set: <your value> = 1
+
+The program does not remember the previous rate
