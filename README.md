@@ -10,4 +10,4 @@ This project is fork of Euro konverter.
 
 # Screenshots
 
-![screenshot](.github/Screenshot.jpg)
+![screenshot](.github/Screenshot-270.jpg)
