@@ -1,4 +1,4 @@
-# Manual Cur Converter
+# Offline Cur Converter
   
 An android app for converting any manual added currency into any manual added currency. 
 
