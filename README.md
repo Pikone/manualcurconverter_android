@@ -6,3 +6,8 @@ This project is licensed under the terms of the GNU GPLv2 license.
 
 This project is fork of Euro konverter.
 [https://eurokonverter.com](https://eurokonverter.com)  
+
+
+# Screenshots
+
+![screenshot](.git/Screenshot.jpg)
