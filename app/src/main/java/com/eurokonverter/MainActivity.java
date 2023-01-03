@@ -19,7 +19,7 @@ import java.util.Locale;
  */
 public class MainActivity extends AppCompatActivity {
 
-    private final double CONVERSION_RATE = 2;
+    private double CONVERSION_RATE = 2;
 
     private LinearLayout selectedView;
     private TextView     inputView;
@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        textView.setText(String.format(Locale.GERMANY, "%,.2f", value));
+        textView.setText(String.format(Locale.GERMANY, "%,.4f", value));
     }
 
     /**
@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        String string = String.format(Locale.GERMANY, "%,.2f", value);
+        String string = String.format(Locale.GERMANY, "%,.4f", value);
 
         while (string.endsWith("0")) {
             string = string.substring(0, string.length() - 1);
@@ -177,6 +177,10 @@ public class MainActivity extends AppCompatActivity {
 
         char key = ((Button) view).getText().toString().charAt(0);
         if (key == 'S') {
+            CONVERSION_RATE = getDouble(inputView);
+            if (selectedView.getId() == R.id.linearLayoutEUR) {
+            CONVERSION_RATE = 1 / getDouble(inputView);
+        }
         } else if (key == 'C') {
             inputView.setText("0");
         } else if (key == 8592) {
@@ -194,7 +198,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
 
             String text = inputView.getText().toString();
-            if (text.contains(",") && text.indexOf(',') == text.length() - 3) {
+            if (text.contains(",") && text.indexOf(',') == text.length() - 5) {
                 return;
             }
 
