@@ -12,11 +12,11 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.eurokonverter"
+        applicationId "com.offlinecurconverter"
         minSdk 15
         targetSdk 32
         versionCode 3
-        versionName "1.1.1"
+        versionName "1.1.2"
 
         setProperty("archivesBaseName", "$applicationId-$versionName")
     }

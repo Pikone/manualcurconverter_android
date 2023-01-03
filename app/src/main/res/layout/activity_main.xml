@@ -114,6 +114,19 @@
             style="?android:attr/buttonBarButtonStyle"
             android:onClick="onKeyPressed"
         />
+
+        <Button
+            android:id="@+id/buttonSET"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onKeyPressed"
+            android:text="SET"
+            android:textSize="@dimen/font_size"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="0" />
+
         <Button
             android:fontFamily="@font/la"
             app:fontFamily="@font/la"

@@ -19,7 +19,7 @@ import java.util.Locale;
  */
 public class MainActivity extends AppCompatActivity {
 
-    private final double CONVERSION_RATE = 7.53450;
+    private final double CONVERSION_RATE = 2;
 
     private LinearLayout selectedView;
     private TextView     inputView;
@@ -176,7 +176,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
         char key = ((Button) view).getText().toString().charAt(0);
-        if (key == 'C') {
+        if (key == 'S') {
+        } else if (key == 'C') {
             inputView.setText("0");
         } else if (key == 8592) {
 
