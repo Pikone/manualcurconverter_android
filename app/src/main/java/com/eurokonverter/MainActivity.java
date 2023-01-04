@@ -134,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    
+
     /**
      *
      */
@@ -182,10 +182,14 @@ public class MainActivity extends AppCompatActivity {
 
         char key = ((Button) view).getText().toString().charAt(0);
         if (key == 'S') {
+            if (getDouble(inputView) != 0) {
             CONVERSION_RATE = getDouble(inputView);
             if (selectedView.getId() == R.id.linearLayoutEUR) {
-            CONVERSION_RATE = 1 / getDouble(inputView);
-        }
+                CONVERSION_RATE = 1 / getDouble(inputView);
+            }
+        } else {
+                return;
+            }
         } else if (key == 'C') {
             inputView.setText("0");
         } else if (key == 8592) {
