@@ -2,6 +2,7 @@ package com.eurokonverter;
 
 import static android.widget.Toast.*;
 
+import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Selection;
@@ -20,7 +21,7 @@ import java.util.Locale;
 /**
  *
  */
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     private double CONVERSION_RATE = 2;
 
